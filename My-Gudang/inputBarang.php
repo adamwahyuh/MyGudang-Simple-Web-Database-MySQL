@@ -13,7 +13,7 @@
         document.addEventListener('DOMContentLoaded', function() {
             let waktuSekarang = new Date().toISOString().split('T')[0];
             let waktuOffsetMenit = (new Date()).getTimezoneOffset();
-            let waktuOffsetHari = waktuOffsetMenit / (24 * 60);
+            let waktuOffsetHari = waktuOffsetMenit / (24 * 60); // Do Math!
             let localDate = new Date(new Date().getTime() - waktuOffsetHari * 24 * 60 * 60 * 1000).toISOString().split('T')[0];
             document.getElementById('inputTanggal').max = waktuSekarang;
         });
