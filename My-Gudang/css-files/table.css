@@ -1,0 +1,261 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400;500;600;700;800;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  background-color: #f6f6f6;
+  font-family: "Montserrat", sans-serif;
+}
+.logo,
+.logo-2 {
+  font-family: "Tektur", sans-serif;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+a {
+  color: black;
+  text-decoration: none;
+}
+html {
+  scroll-behavior: smooth;
+}
+li,
+li a {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 15px;
+  color: black;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+}
+.links {
+  list-style: none;
+}
+.links li {
+  display: inline-block;
+  padding: 0px 20px;
+}
+li a {
+  position: relative;
+  padding: 0 10px;
+}
+li a:after {
+  content: "";
+  position: absolute;
+  background-color: #8fbaf3;
+  height: 3px;
+  width: 0%;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+li a:hover:after {
+  width: 100%;
+}
+div {
+  font-family: "Montserrat" sans-serif;
+}
+.any-btn {
+  border: none;
+  cursor: pointer;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  padding: 10px 20px;
+  border-radius: 15px;
+  background-color: #8fbaf3;
+  color: #fff;
+  transition: 0.5s;
+}
+.any-btn:hover {
+  background-color: blue;
+}
+
+/* flex-nav */
+
+#flex-nav {
+  display: none;
+  z-index: 2;
+}
+.flex-menu {
+  position: relative;
+  display: inline-block;
+}
+.flex-icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 24px;
+  width: 30px;
+  cursor: pointer;
+}
+.flex-icon span {
+  width: 75%;
+  height: 2px;
+  background-color: black;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links {
+  position: absolute;
+  top: 100%;
+  right: 20px;
+  background-color: #fff;
+  width: fit-content;
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3 ease-in-out;
+  z-index: 2;
+}
+.menu-links a {
+  display: block;
+  padding: 10px;
+  text-align: center;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  transition: all 0.3 ease-in-out;
+}
+.menu-links li {
+  list-style-type: none;
+}
+.menu-links.open {
+  max-height: 200px;
+}
+.flex-icon span {
+  transition: 0.3s ease-in-out;
+}
+.flex-icon.open span:first-child {
+  transform: rotate(45deg) translate(10px, 5px);
+  background-color: #8fbaf3;
+}
+.flex-icon.open span:nth-child(2) {
+  opacity: 0;
+}
+.flex-icon.open span:last-child {
+  transform: rotate(-45deg) translate(10px, -5px);
+  background-color: #8fbaf3;
+}
+.flex-icon span:first-child {
+  transform: none;
+}
+.flex-icon span:first-child {
+  opacity: 1;
+}
+.flex-icon span:first-child {
+  transform: none;
+}
+
+/*Table */
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #f6f6f6;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0px;
+}
+
+.table th,
+.table td {
+  /* border: 1px solid #ddd; */
+  padding: 12px;
+  text-align: left;
+}
+
+.table th {
+  background-color: #8fbaf3;
+  color: #fff;
+}
+
+table tbody tr:nth-child(even) {
+  background-color: gray;
+}
+
+.floating-button2 {
+  position: fixed;
+  bottom: -20px;
+  right: 20px;
+  bottom: 5px;
+  z-index: 998;
+}
+.pesan-terhapus {
+  color: red;
+}
+.floating-button {
+  position: fixed;
+  bottom: -10px;
+  left: 200px;
+  z-index: 999;
+}
+.kembali,
+.download {
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #8fbaf3;
+  color: white;
+  border-radius: 15px;
+  margin-right: 20px;
+  opacity: 100%;
+}
+.download {
+  border: none;
+  padding: 12px 15px;
+  padding-bottom: 10px;
+}
+
+.kembali:hover {
+  opacity: 100%;
+  cursor: pointer;
+}
+.download:hover {
+  background-color: blue;
+  cursor: pointer;
+}
+.Harga-isi {
+  text-align: left;
+}
+table tbody tr:nth-child(even) {
+  td {
+    background-color: #dde6ed;
+  }
+  td a {
+    background-color: #dde6ed;
+  }
+}
+tr td {
+  font-weight: 500;
+}
+tr td a {
+  font-weight: 600;
+}
+.delete a {
+  padding: 10px;
+  color: #f55050;
+  transition: 0.3s;
+}
+.delete a:hover {
+  color: #ff8989;
+  font-size: 0.9rem;
+}
+
+.edit a {
+  padding: 10px;
+  cursor: pointer;
+  color: #3887be;
+  transition: 0.3s;
+}
+.edit a:hover {
+  color: #52d3d8;
+  font-size: 0.9rem;
+}

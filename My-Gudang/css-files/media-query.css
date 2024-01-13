@@ -1,0 +1,22 @@
+@media screen and (max-width: 720px) {
+  #desktop-nav {
+    display: none;
+  }
+  #flex-nav {
+    display: flex;
+  }
+  #menu {
+    margin-top: 20px;
+  }
+  .image-menu img {
+    display: none;
+  }
+  .home .container .content-menu .contents h3 {
+    color: blue;
+    font-size: 3rem;
+  }
+  .home .container .content-menu .contents p {
+    color: blue;
+    font-size: 1rem;
+  }
+}

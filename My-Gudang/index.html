@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyGudang!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="images/logo-Mygudang-vec.ico" />
+    <link rel="stylesheet" href="css-files/menu.css" />
+    <link rel="stylesheet" href="css-files/scrollbar.css" />
+    <link rel="stylesheet" href="css-files/logo.css" />
+    <link rel="stylesheet" href="css-files/media-query.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <header id="desktop-nav">
+      <a class="logo" href="">MyGudang</a>
+      <nav>
+        <ul class="links">
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#input">Input</a></li>
+          <li><a href="#table">Table</a></li>
+        </ul>
+      </nav>
+      <a class="any-btn" href="inputBarang.php">INPUT &#10148;</a>
+    </header>
+    <header>
+      <nav id="flex-nav">
+        <div class="logo-2">MyGudang</div>
+        <div class="flex-menu">
+          <div class="flex-icon" onclick="toggleMenu()">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <div class="menu-links">
+            <li><a href="#" onclick="toggleMenu()">Menu</a></li>
+            <li><a href="#input" onclick="toggleMenu()">Input</a></li>
+            <li><a href="#table" onclick="toggleMenu()">Table</a></li>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <br />
+    <!-- Content -->
+    <!-- Menu -->
+    <section class="home" id="menu">
+      <div class="container">
+        <div class="wrapper">
+          <div class="content-menu">
+            <div class="contents">
+              <span>Our Storage</span>
+              <h3>MyGudang!</h3>
+              <p>Menyimpan datamu dengan Aman</p>
+
+              <a href="inputBarang.php" class="btn">Start Inputing!</a>
+            </div>
+            <div class="image-menu">
+              <img src="images/gudang-vec.png" alt="Menu" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- card -->
+    <div class="card-container">
+      <div class="card">
+        <a href="inputBarang.php"
+          ><img id="input" src="images/input-img.jpg" alt="Input Image"
+        /></a>
+        <div class="card-content">
+          <h3>Input</h3>
+          <p>Mulai menyimpan Datamu</p>
+          <a href="inputBarang.php" class="btn">INPUT &#187;</a>
+        </div>
+      </div>
+      <div class="card">
+        <a href="dataBarang.php"
+          ><img id="table" src="images/table-img.jpg" alt="Input Image"
+        /></a>
+        <div class="card-content">
+          <h3>Table</h3>
+          <p>Lihat semua data-datamu</p>
+          <a href="dataBarang.php" class="btn">TABLE &#187;</a>
+        </div>
+      </div>
+      <div class="card">
+        <a href="dataBarang.php"
+          ><img id="table" src="images/download-vec.jpg" alt="Input Image"
+        /></a>
+        <div class="card-content">
+          <h3>Export (.xls)</h3>
+          <p>Export Datamu ke Excel</p>
+          <form method="post" action="download.php">
+            <input
+              class="download"
+              type="submit"
+              value="Download (.xls)"
+              name="export_excel"
+            />
+          </form>
+        </div>
+      </div>
+    </div>
+    <br /><br /><br />
+    <footer>
+      <div class="footer-content">
+        <h3>MyGudang!</h3>
+        <p>Menyimpan datamu dengan Aman</p>
+        <ul class="footer-social">
+          <li class="social">
+            <a
+              href="https://github.com/adamwahyuh/"
+              target="_blank"
+              class="fa fa-github"
+            ></a>
+          </li>
+          <li class="social">
+            <a
+              href="https://www.facebook.com/adamwahyuh"
+              target="_blank"
+              class="fa fa-facebook"
+            ></a>
+          </li>
+        </ul>
+        <br />
+        <span
+          >&copy; 2024<a
+            href="https://www.facebook.com/adamwahyuh"
+            target="_blank"
+            >adamwahyuh
+          </a>
+          Designed by Adam Wahyu Hariyadi</span
+        >
+      </div>
+    </footer>
+    <script src="menu.js"></script>
+  </body>
+</html>
+
+<!-- 
+  Fun Tip : Press ctrl + f5 for refresh page if your css files does not updating 
+  it'll clear your cache 
+-->
