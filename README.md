@@ -3,6 +3,8 @@
 <h3> About</h3>
 
 - Input To the Database mySQL
+- PHP JS 
+- HTML CSS
 - Display in Table
 - Delete
 - Edit
