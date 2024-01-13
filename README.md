@@ -1,4 +1,4 @@
-<h1 align="center"> Simple Website</h1>
+<h1 align="center">MyGudang Simple Website</h1>
 
 <h3> About</h3>
 
