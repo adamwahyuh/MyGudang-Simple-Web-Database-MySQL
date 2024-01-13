@@ -13,4 +13,4 @@
 
 My college Project
 
-&copy; 2024 <a href="https://www.facebook.com/adamwahyuh/" target="_blank">adamwahyuh </a>
+&copy; 2024 <a href="https://www.facebook.com/adamwahyuh/">adamwahyuh </a>
