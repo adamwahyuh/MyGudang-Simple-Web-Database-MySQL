@@ -15,7 +15,7 @@ Feature
 - No input Negatif Number in Price input
 - No_Item and Price input Must be Integer
 - Realtime Limit Date 
-- Every Input must be filled otherwise nothing is add to the database
+- Every Input must be filled otherwise nothing is added to the database
 - Export To Excel 
 
 My college Project
