@@ -35,7 +35,7 @@
     include "koneksi.php";
 
     if (isset($_POST['proses'])) {
-        // Memeriksa data biar tidak ada empty string
+      
         $tanggal = isset($_POST['Tanggal']) ? $_POST['Tanggal'] : '';
         $namaBarang = isset($_POST['Nama_barang']) ? $_POST['Nama_barang'] : '';
         $hargaSatuan = isset($_POST['Harga_satuan']) ? $_POST['Harga_satuan'] : '';
